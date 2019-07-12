@@ -2,7 +2,7 @@ def nyc_pigeon_organizer (data)
   result = Hash.new()
 
   data.each do |first, second|
-    second.each do |category, OfNa|
+    second.each do |category, array|
       array.each do |name|
         if result[name] == false
           result[name] = {:color => [], :gender => [], :lives => []}
