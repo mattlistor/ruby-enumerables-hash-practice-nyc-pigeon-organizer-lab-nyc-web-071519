@@ -1,6 +1,6 @@
 def nyc_pigeon_organizer (data)
   result = Hash.new()
-
+  
   data.each do |first, second|
     second.each do |category, names|
       names.each do |i|
@@ -10,6 +10,7 @@ def nyc_pigeon_organizer (data)
       end 
     end 
   end 
+  
   x = result.keys
   data[:color].each do |bird_color, name|
     name.each do |bird_name|
@@ -20,6 +21,7 @@ def nyc_pigeon_organizer (data)
       end 
     end 
   end 
+  
   data[:gender].each do |gender, type|
     type.each do |bird_name|
       x.each do |item|
@@ -28,7 +30,8 @@ def nyc_pigeon_organizer (data)
         end 
       end 
     end 
-  end 
+  end
+  
   data[:lives].each do |location, name|
     name.each do |bird_name|
       x.each do |item|
