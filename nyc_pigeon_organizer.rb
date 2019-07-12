@@ -5,7 +5,7 @@ def nyc_pigeon_organizer (data)
     second.each do |category, names|
       names.each do |i|
         if result[i] == nil
-          result[i] = {}
+          result[i] = {:color => [], :gender => [], :lives => []}
         end
       end 
     end 
