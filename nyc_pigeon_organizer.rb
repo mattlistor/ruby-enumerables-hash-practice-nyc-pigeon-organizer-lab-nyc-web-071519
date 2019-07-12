@@ -1,7 +1,7 @@
 def nyc_pigeon_organizer (data)
   result = Hash.new()
   
-  #--MAKING ARRAY OF PIGEON NAMES--
+  #--MAKING HASH WITH NAMES AS KEYS (SITLL TO BE FILLED OUT)
   
   data.each do |first, second|
     second.each do |category, name|
