@@ -29,7 +29,7 @@ def nyc_pigeon_organizer (data)
     name.each do |birdName|
       pigeonNames.each do |item|
         if birdName === item
-          result[item][:gender] << gender.to_s
+          result[item][:gender].push(gender.to_s)
         end 
       end 
     end 
@@ -39,7 +39,7 @@ def nyc_pigeon_organizer (data)
     name.each do |bird_name|
       pigeonNames.each do |item|
         if bird_name === item
-          result[item][:lives] << location
+          result[item][:lives].push(location)
         end 
       end 
     end 
