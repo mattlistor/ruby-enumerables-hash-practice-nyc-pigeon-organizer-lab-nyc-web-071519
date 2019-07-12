@@ -18,7 +18,7 @@ def nyc_pigeon_organizer (data)
     name.each do |birdName|
       pigeonNames.each do |item|
         if birdName === item
-          result[item][:color] << birdColor.to_s
+          result[item][:color].push(birdColor.to_s)
         end 
       end 
     end 
