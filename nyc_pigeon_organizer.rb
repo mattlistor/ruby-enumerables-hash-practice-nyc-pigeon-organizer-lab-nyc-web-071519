@@ -1,6 +1,8 @@
 def nyc_pigeon_organizer (data)
   result = Hash.new()
   
+  #--MAKING ARRAY OF PIGEON NAMES--
+  
   data.each do |first, second|
     second.each do |category, name|
       name.each do |i|
@@ -10,6 +12,8 @@ def nyc_pigeon_organizer (data)
       end 
     end 
   end 
+  
+  #--MAKING ARRAY OF PIGEON NAMES
   
   pigeonNames = result.keys
   
@@ -58,7 +62,7 @@ def nyc_pigeon_organizer (data)
     end 
   end 
   
-  #----------
+  #--ALL DONE 
   
   return result 
 end 
