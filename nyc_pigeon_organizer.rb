@@ -13,7 +13,7 @@ def nyc_pigeon_organizer (data)
   
   pigeonNames = result.keys
   
-  #----------
+  #--ADDING COLOR
   
   color = data[:color]
   color.each do |birdColor, name|
@@ -48,7 +48,7 @@ def nyc_pigeon_organizer (data)
   lives = data[:lives]
   lives.each do |location, name|
     name.each do |birdName|
-      #----------
+
       pigeonNames.each do |i|
         if birdName === i
           result[i][:lives].push(location.to_s)
@@ -57,8 +57,8 @@ def nyc_pigeon_organizer (data)
       
     end 
   end 
-    #----------
+  
   #----------
-  #----------
+  
   return result 
 end 
