@@ -40,7 +40,7 @@ def nyc_pigeon_organizer (data)
     name.each do |birdName|
       pigeonNames.each do |item|
         if birdName === item
-          result[item][:lives].push(location)
+          result[item][:lives].push(location.to_s)
         end 
       end 
     end 
