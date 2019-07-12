@@ -2,8 +2,8 @@ def nyc_pigeon_organizer (data)
   result = Hash.new()
   
   data.each do |first, second|
-    second.each do |category, names|
-      names.each do |i|
+    second.each do |category, name|
+      name.each do |i|
         if result[i] == nil
           result[i] = {:color => [], :gender => [], :lives => []}
         end
@@ -14,8 +14,8 @@ def nyc_pigeon_organizer (data)
   pigeonNames = result.keys
   
   color = data[:color]
-  color.each do |birdColor, names|
-    names.each do |birdName|
+  color.each do |birdColor, name|
+    name.each do |birdName|
       pigeonNames.each do |item|
         if birdName === item
           result[item][:color] << birdColor.to_s
@@ -25,10 +25,10 @@ def nyc_pigeon_organizer (data)
   end 
   
   gender = data[:gender]
-  gender.each do |gender, names|
-    names.each do |bird_name|
+  gender.each do |gender, name|
+    name.each do |birdName|
       pigeonNames.each do |item|
-        if bird_name === item
+        if birdName === item
           result[item][:gender] << gender.to_s
         end 
       end 
