@@ -13,7 +13,7 @@ def nyc_pigeon_organizer (data)
   
   pigeonNames = result.keys
   
-  #--ADDING COLOR
+  #--ADDING COLOR TO HASH
   
   color = data[:color]
   color.each do |birdColor, name|
@@ -28,7 +28,7 @@ def nyc_pigeon_organizer (data)
     end 
   end 
   
-  #----------
+  #--ADDING GENDER TO HASH
   
   gender = data[:gender]
   gender.each do |gender, name|
@@ -43,7 +43,7 @@ def nyc_pigeon_organizer (data)
     end 
   end
   
-  #----------
+  #--ADDING LIVES TO HASH
   
   lives = data[:lives]
   lives.each do |location, name|
