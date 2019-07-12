@@ -17,9 +17,9 @@ def nyc_pigeon_organizer (data)
   color.each do |birdColor, name|
     name.each do |birdName|
       
-      pigeonNames.each do |item|
-        if birdName === item
-          result[item][:color].push(birdColor.to_s)
+      pigeonNames.each do |i|
+        if birdName === i
+          result[i][:color].push(birdColor.to_s)
         end 
       end 
       
@@ -30,9 +30,9 @@ def nyc_pigeon_organizer (data)
   gender.each do |gender, name|
     name.each do |birdName|
       
-      pigeonNames.each do |item|
-        if birdName === item
-          result[item][:gender].push(gender.to_s)
+      pigeonNames.each do |i|
+        if birdName === i
+          result[i][:gender].push(gender.to_s)
         end 
       end 
       
@@ -43,9 +43,9 @@ def nyc_pigeon_organizer (data)
   lives.each do |location, name|
     name.each do |birdName|
       
-      pigeonNames.each do |item|
-        if birdName === item
-          result[item][:lives].push(location.to_s)
+      pigeonNames.each do |i|
+        if birdName === i
+          result[i][:lives].push(location.to_s)
         end 
       end 
       
