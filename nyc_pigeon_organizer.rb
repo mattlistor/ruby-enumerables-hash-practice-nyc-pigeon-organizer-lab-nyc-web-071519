@@ -14,8 +14,8 @@ def nyc_pigeon_organizer (data)
   pigeonNames = result.keys
   
   color = data[:color]
-  color.each do |birdColor, name|
-    name.each do |birdName|
+  color.each do |birdColor, names|
+    names.each do |birdName|
       pigeonNames.each do |item|
         if birdName === item
           result[item][:color] << birdColor.to_s
