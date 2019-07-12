@@ -5,8 +5,7 @@ def nyc_pigeon_organizer (data)
     all_other.each do |category, array|
       array.each do |name|
         if result[name] == false
-        else
-        result[name] = {:color => [], :gender => [], :lives => []}
+          result[name] = {:color => [], :gender => [], :lives => []}
         end
       end 
     end 
